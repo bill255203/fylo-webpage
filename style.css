@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --emailsignup: hsl(217, 28%, 15%);
+  --main: hsl(218, 28%, 13%);
+  --footer: hsl(216, 53%, 9%);
+  --testimonials: hsl(219, 30%, 18%);
+  --sans: 'Open Sans', sans-serif;
+  --rale: 'Raleway', sans-serif;
+  --Cyan: hsl(176, 68%, 64%);
+  --Blue: hsl(198, 60%, 50%);
+}
+body {
+  background-color: var(--main);
+  color: #fff;
+  font-family: var(--sans);
+}
+.section1,
+.section2,
+.section5 {
+  text-align: center;
+}
+section {
+  margin: 80px auto;
+}
+
+/*the navbar*/
+navbar {
+  display: flex;
+  margin: 4%;
+}
+navbar > div {
+  padding: 20px;
+}
+.first {
+  margin-left: auto;
+}
+/*the first section*/
+section > img {
+  width: 100%;
+}
+.section1 {
+  width: min(750px, 80%);
+}
+h1 {
+  font-size: 36px;
+  width: 90%;
+  margin: 20px auto;
+}
+p {
+  font-size: 18px;
+  width: 70%;
+  margin: auto;
+  line-height: 1.5;
+  opacity: 70%;
+}
+.button {
+  background-color: var(--Cyan);
+  padding: 15px 50px;
+  margin: 20px auto;
+  height: 50px;
+  width: 250px;
+  border-radius: 40px;
+}
+/*section2*/
+.box1 {
+  grid-area: box1;
+}
+.box2 {
+  grid-area: box2;
+}
+.box3 {
+  grid-area: box3;
+}
+.box4 {
+  grid-area: box4;
+}
+section > div {
+  width: 100%;
+}
+.section2 {
+  width: min(900px, 80%);
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  grid-template-areas:
+    'box1 box2'
+    'box3 box4';
+}
+div > p {
+  font-size: 12px;
+}
+/*section3*/
+.section3 {
+  display: flex;
+  width: min(1000px, 80%);
+}
+.pic-2 {
+  width: min(600px, 50%);
+  object-fit: contain;
+}
+#stay {
+  margin-left: 0;
+  margin-top: 20%;
+}
+
+.text-3 {
+  margin: 20px auto;
+  opacity: 70%;
+  font-size: small;
+}
+#see {
+  color: var(--Cyan);
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+/*section 4*/
+.section4 {
+  display: flex;
+  width: min(1000px, 80%);
+}
+.section4 > div {
+  background-color: var(--testimonials);
+}
+.three-box {
+  width: min(450px, 30%);
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/*section 5*/
+.section5 {
+  width: min(700px, 80%);
+  background-color: var(--testimonials);
+  padding-bottom: 30px;
+}
+footer {
+  padding: 2% 10%;
+  background-color: var(--footer);
+}
+.bottom-logo {
+  display: block;
+  margin-bottom: 20px;
+}
+.fivsec {
+  display: flex;
+  font-style: var(--rale);
+}
+.attribution {
+  background-color: var(--testimonials);
+  margin-top: 50px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 30px; /* Height of the footer */
+  text-align: center;
+}
+a {
+  color: var(--Cyan);
+}
